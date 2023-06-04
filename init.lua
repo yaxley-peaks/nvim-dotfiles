@@ -42,6 +42,7 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.showmode = false
+vim.opt.linebreak = true
 
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true

@@ -10,6 +10,7 @@ local O = {
       },
    }),
    require("fidget").setup({
+      tag = "legacy",
       text = {
          spinner = "meter"
       }

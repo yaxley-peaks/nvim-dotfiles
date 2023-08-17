@@ -8,6 +8,11 @@ local O = {
          changedelete = { text = '~' },
          untracked    = { text = '┆' },
       },
+   }),
+   require("fidget").setup({
+      text = {
+         spinner = "meter"
+      }
    })
 }
 return O

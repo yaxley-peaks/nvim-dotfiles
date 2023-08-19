@@ -10,9 +10,9 @@ return {
       group_empty = true,
     },
     filters = {
-      dotfiles = true,
+      dotfiles = false,
+      git_ignored = false,
     },
   },
- vim.keymap.set("n", "<leader>ff", '<cmd>NvimTreeToggle<cr>')
+  vim.keymap.set("n", "<leader>ff", '<cmd>NvimTreeToggle<cr>')
 }
-

@@ -1,4 +1,5 @@
 vim.go.conceallevel = 3
+vim.o.conceallevel = 3
 local O = {
    require("gitsigns").setup({
       signs = {

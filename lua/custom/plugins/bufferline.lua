@@ -5,13 +5,17 @@ return {
   opts = {
     options = {
       mode = 'tabs',
-      buffer_close_icon = 'x',
-      themable = false,
+      buffer_close_icon = '󰅖',
+      themable = true,
       indicator = {
-        style = "underline"
+        style = "icon"
       },
       offsets = {
-        { filetype = 'NvimTree' }
+        {
+          filetype = 'NvimTree',
+          text = "File Explorer",
+          text_align = "center",
+        }
       },
       highlights = {
         buffer_selected = {
@@ -21,9 +25,13 @@ return {
           fg = { attribute = 'fg', highlight = 'Function' },
           italic = false
         },
-        separator_style = "slant",
+        separator_style = "padded_slant",
         always_show_bufferline = false,
-
+        hover = {
+          enabled = true,
+          delay = 200,
+          reveal = { 'close' }
+        },
       }
     }
   }

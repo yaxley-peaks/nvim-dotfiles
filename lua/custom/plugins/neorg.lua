@@ -3,6 +3,7 @@ return {
   build = ":Neorg sync-parsers",
   dependencies = { "nvim-lua/plenary.nvim" },
   config = function()
+    vim.go.conceallevel = 3
     require("neorg").setup {
       load = {
         ["core.summary"] = {},  -- autogen summary

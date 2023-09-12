@@ -6,6 +6,11 @@ return {
     require('orgmode').setup({
       org_agenda_files = { '~/orgs/**/*' },
       org_default_notes_file = '~/orgs/refile.org',
+      mappings = {
+        org = {
+          org_toggle_checkbox = '<prefix>h'
+        }
+      },
     })
   end
 }
